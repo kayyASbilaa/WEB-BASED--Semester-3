@@ -24,7 +24,7 @@
             <h2>Book Collection</h2>
             
             <!-- Table Component (Sheet D.1) -->
-            <table>
+            <table Border="2px solid black">
                 <caption>Personal Book Collection List</caption>
                 <thead>
                     <tr>
@@ -69,7 +69,26 @@
 
         <section id="add-book">
             <h2>Add New Book</h2>
-            <!-- Form will be added here in Sheet E -->
+            <form action="/save" method="post">
+                <p>
+                    <label for="book-title">Book Title</label>
+                    <input type="text" id="book-title" name="book-title" required>
+                </p>
+                <p>
+                    <label for="author-name">Author Name</label>
+                    <input type="text" id="author-name" name="author-name" required>
+                </p>
+                <p>
+                    <label for="reading-status">Reading Status</label>
+                    <select id="reading-status" name="reading-status" required>
+                        <option value="">-- Select Status --</option>
+                        <option value="unread">Plan to Read</option>
+                        <option value="reading">Reading</option>
+                        <option value="completed">Completed</option>
+                    </select>
+                </p>
+                <button type="submit">Save</button>
+            </form>
         </section>
     </main>
 
