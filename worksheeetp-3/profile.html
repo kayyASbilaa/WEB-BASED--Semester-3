@@ -19,12 +19,8 @@
     <main>
         <section id="book-collection">
             <h2>Book Collection</h2>
-            <<main>
-        <section id="book-collection">
-            <h2>Book Collection</h2>
             
-            <!-- Table Component (Sheet D.1) -->
-            <table Border="2px solid black">
+            <table border="1">
                 <caption>Personal Book Collection List</caption>
                 <thead>
                     <tr>
@@ -48,17 +44,22 @@
                         <td>Reading</td>
                     </tr>
                     <tr>
-                        <th scope="row">The Art of noticing</th>
-                        <td>Miu Schuett</td>
+                        <th scope="row">The Art of Noticing</th>
+                        <td>Lalena</td>
                         <td>Self-Development</td>
                         <td>Plan to Read</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Is it Better to speak or die?</th>
+                        <td>Kathrina</td>
+                        <td>Self-Development</td>
+                        <td>Reading</td>
                     </tr>
                 </tbody>
             </table>
 
-            <!-- Image Component (Sheet D.2) -->
             <figure>
-                <img src="c:\Users\User\Downloads\ภาพชั้นวางห้องสมุดแบบเก่าที่เต็มไปด้วยหนังสือมากมาย,เทมเพลต แบบ JPG ดาวน์โหลดฟรี - Pikbest (1).jpeg" 
+                <img src="bookshelf.jpeg" 
                      alt="A neatly organized wooden bookshelf filled with various hardcover and paperback books." 
                      width="640" 
                      height="360" 
@@ -69,7 +70,7 @@
 
         <section id="add-book">
             <h2>Add New Book</h2>
-            <form action="/save" method="post">
+            <form action="simpan" method="post">
                 <p>
                     <label for="book-title">Book Title</label>
                     <input type="text" id="book-title" name="book-title" required>
@@ -93,7 +94,7 @@
     </main>
 
     <footer>
-        <p>Faizah Nabila Azzahra. 25523189 2026</p>
+        <p>Faizah Nabila Azzahra · 25523189 · 2026</p>
     </footer>
 </body>
 </html>
